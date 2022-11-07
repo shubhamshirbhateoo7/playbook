@@ -1,0 +1,16 @@
+---
+- name: shubham project
+  hosts: all
+  become: true
+  tasks:
+  - name:
+    apt:
+     name: "apache2"
+     state: "present"
+
+  - name: Enable apche on reboot
+    service:
+     name: apache2
+     state: stated
+     Enabled: true
+...     
