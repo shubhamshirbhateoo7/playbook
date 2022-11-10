@@ -8,5 +8,5 @@
 ---
 - name: download css template
   ansible.builtin.get_url:
-  url 
+   url: 
 ... 
