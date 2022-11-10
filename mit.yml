@@ -7,5 +7,5 @@
       state: latest
 ---
 - name: download css template
-
+cd /
 ...
