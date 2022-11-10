@@ -13,6 +13,6 @@
 - name: anarchive css template    
    src: /var/www/html/
    des: /usr/local/bin /var/www/html/
-  remote_src: yes
+   remote_src: yes
 
 ... 
