@@ -1,8 +1,8 @@
 ---
 tasks:
  - name: installing pkg
-   become: true
-   
+   become: true.buil
+   ansible
 apt:
 name: apache2
 state: latest
