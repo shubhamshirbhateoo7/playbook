@@ -1,11 +1,11 @@
  ---
-tasks:
- - name: installing pkg
+  tasks:
+  - name: installing pkg
    become: true
    ansible.builtin.apt:
     name: apache2
     state: latest
-    
+
 
 
 ...
