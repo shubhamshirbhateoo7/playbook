@@ -7,5 +7,6 @@
       state: latest
 ---
 - name: download css template
-  ansible.builtin.get_url: 
+  ansible.builtin.get_url:
+   
 ... 
