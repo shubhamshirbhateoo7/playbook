@@ -11,5 +11,5 @@
    url:
    dest: /var/www/html/
 - name: anarchive css template    
-  src: /usr/local/bin var
+  src: /usr/local/bin /var
 ... 
