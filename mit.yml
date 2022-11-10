@@ -1,0 +1,36 @@
+---
+- name: install apache
+  ansible.builtin.apt:
+     name: apache2
+     update_cache: yes
+     state: present
+
+- name: host css template
+  ansible.builtin.get_url:
+     url: "https://www.free-css.com/assets/files/free-css-templates/download/page285/gymster.zip"
+     dest: /var/www/html/
+
+- name: install zip and unzip
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+             - zip
+             - unzip
+- name: extract package
+  ansible.builtin.unarchive:
+    src: "https://www.free-css.com/assets/files/free-css-templates/download/page285/gymster.zip"
+    dest: /var/www/html/
+    remote_src: yes
+- name: copy file
+  ansible.builtin.copy:
+    src: /var/www/html/gym-html-template/
+    dest: /var/www/html/
+    remote_src: yes
+    #- name: remove
+    # command: rm  -rf /var/www/html/index.html
+
+- name: start apache
+  ansible.builtin.service:
+    name: apache2
+    state: started
