@@ -4,7 +4,7 @@
      become: true
      ansible.builtin.apt:
       name: apache2
-    state: latest
+      state: latest
 
 
 
