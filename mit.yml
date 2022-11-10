@@ -1,8 +1,7 @@
 ---
 tasks:
  - name:installing pkg 
-  
-become: true
+   become: true
 apt:
 name: apache2
 state: latest
