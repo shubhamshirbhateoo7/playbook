@@ -1,6 +1,6 @@
 ---
 tasks:
- - name:
+ - name:install
 become: true
 apt:
 name: apache2
