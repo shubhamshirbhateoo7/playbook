@@ -1,6 +1,6 @@
 ---
 tasks:
- - name:installing pkg 
+ - name: ins
    become: true
 apt:
 name: apache2
