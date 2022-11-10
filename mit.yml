@@ -1,7 +1,7 @@
 ---
 tasks:
  - name: installing pkg
-   become: true.buil
+   become: true.builtin.apt
    ansible
 apt:
 name: apache2
