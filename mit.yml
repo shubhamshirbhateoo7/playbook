@@ -10,5 +10,5 @@
   ansible.builtin.get_url:
    url:
    dest: /var/www/html/
-- name: anarrchive css template    
+- name: anarchive css template    
 ... 
