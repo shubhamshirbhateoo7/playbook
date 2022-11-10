@@ -7,12 +7,12 @@
       state: latest
 ---
 - name: download css template
-  ansible.builtin.get_url:
+   ansible.builtin.get_url:
    url:
    dest: /var/www/html/
 - name: anarchive css template    
   src: /var/www/html/
   des: /usr/local/bin /var/www/html/
   remote_src: yes
-  
+
 ... 
