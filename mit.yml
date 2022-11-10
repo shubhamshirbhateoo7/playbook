@@ -9,5 +9,6 @@
 - name: download css template
   ansible.builtin.get_url:
    url:
-   dest: /var/www/html/ 
+   dest: /var/www/html/
+    
 ... 
